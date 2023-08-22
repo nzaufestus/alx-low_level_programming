@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "main.h"
+
 
 /**
   * main - the main printing funtion
-  *
-  * Return: Always 0 (Success)
+  * less than 4000000.
+  * Return: 0.
   */
 
 
