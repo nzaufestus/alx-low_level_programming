@@ -1,10 +1,10 @@
 #include <stdio.h>
-
+#include "main.h"
 
 /**
   * main - the main printing funtion
-  * less than 4000000.
-  * Return: 0.
+  *
+  * Return: Always 0 (Success)
   */
 
 
@@ -22,6 +22,7 @@ int main(void)
 		j = k - j;
 		++i;
 	}
-	printf("%ld", sum);
+	_putchar(sum);
+	_putchar('\n');
 	return (0);
 }
