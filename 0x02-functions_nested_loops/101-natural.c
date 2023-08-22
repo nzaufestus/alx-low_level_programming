@@ -1,19 +1,19 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - Computes and prints the sum of multiples of 3 or 5 below 1024
- * Return: Always 0
+ * main - Computes and prints the sum of all the multiples
+ * of 3 or 5 below 1024 (excluded)
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-int sum = 0;
-int i;
-for (i = 0; i < 1024; i++)
+int number, sum = 0;
+for (number = 0; number < 1024; number++)
 {
-if (i % 3 == 0 || i % 5 == 0
+if ((number % 3 == 0) || (number % 5 == 0))
 {
-sum += i;
+sum += number;
 }
 }
 printf("%d\n", sum);
