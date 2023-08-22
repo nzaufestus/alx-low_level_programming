@@ -8,7 +8,7 @@
 int main(void)
 {
 int count;
-int fib1 = 1, fib2 = 2, sum;
+unsigned long int fib1 = 1, fib2 = 2, sum;
 printf("%lu, %lu, ", fib1, fib2);
 for (count = 3; count <= 98; count++)
 {
