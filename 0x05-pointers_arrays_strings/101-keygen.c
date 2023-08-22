@@ -1,32 +1,32 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * times_table - Prints the 9 times table
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
  */
-void times_table(void)
+int main(void)
 {
-int row, column;
-for (row = 0; row <= 9; row++)
+int pass[100];
+int i, sum, n;
+sum = 0;
+srand(time(NULL));
+for (i = 0; i < 100; i++)
 {
-for (column = 0; column <= 9; column++)
+pass[i] = rand() % 94;  /* Use 94 to cover printable ASCII characters */
+sum += pass[i];
+putchar(pass[i] + 33);  /* Convert to printable character range */
+if ((2772 - sum) < 94)
 {
-int result = row * column;
-if (column != 0)
-{
-_putchar(',');
-_putchar(' ');
-}
-if (result >= 10)
-{
-_putchar(result / 10 + '0');
-_putchar(result % 10 + '0');
-}
-else
-{
-_putchar(' ');
-_putchar(result + '0');
+n = 2772 - sum;
+sum += n;
+putchar(n + 33);  /* Convert to printable character range */
+break;
 }
 }
-_putchar('\n');
-}
+putchar('\n');
+return (0);
 }
