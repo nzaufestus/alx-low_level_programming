@@ -30,7 +30,5 @@ break;
 putchar('\n');
 if (sum == 2772)
 printf("Tada! Congrats\n");
-else
-printf("Wrong password\n");
 return (0);
 }
