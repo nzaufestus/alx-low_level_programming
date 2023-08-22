@@ -1,10 +1,9 @@
 #include <stdio.h>
-
-
-	/**
-	 * main - fibonacci <3
-	 *
-	 * Purpose - no hardcode
+/**
+ * main - writes a program that finds and prints
+ * the first 98 Fibonacci numbers, starting with a new line
+ *
+ * Purpose - no hardcode
 	 *
 	 * Return:  (Success)
 	 */
