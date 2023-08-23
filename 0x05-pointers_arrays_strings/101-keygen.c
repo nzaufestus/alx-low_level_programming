@@ -16,19 +16,16 @@ sum = 0;
 srand(time(NULL));
 for (i = 0; i < 100; i++)
 {
-pass[i] = rand() % 94;  /* Use 94 to cover printable ASCII characters */
-sum += pass[i];
-putchar(pass[i] + 33);  /* Convert to printable character range */
-if ((2772 - sum) < 94)
+pass[i] = rand() % 78;
+sum += (pass[i] + '0');
+putchar(pass[i] + '0');
+if ((2772 - sum)-'0' < 78)
 {
-n = 2772 - sum;
+n = 2772 - sum - '0';
 sum += n;
-putchar(n + 33);  /* Convert to printable character range */
+putchar(n + '0');
 break;
 }
 }
-putchar('\n');
-if (sum == 2772)
-printf("Tada! Congrats\n");
 return (0);
 }
