@@ -1,19 +1,19 @@
 #include <stdio.h>
 /**
- * main - a dream doesn't become reality through magic
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 int n;
 int a[5];
 int *p;
-
 a[2] = 1024;
 p = &n;
 /*
+* main - A dream doesn't become reality through magic;
+* it takes sweat, determination and hard work
 * write your line of code here...
 * Remember:
 * - you are not allowed to use a
